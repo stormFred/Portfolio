@@ -8,7 +8,7 @@ export default function Connect() {
 		<>
 			<div className="connect" id="contacts">
 				<div className="lets">
-					<h3 className="contact-heading">Lets Connect</h3>
+					<h3 className="contact-heading">Let's Connect</h3>
 				</div>
 				<div className="all-contacts">
 					<div className="gmail contacts-container">

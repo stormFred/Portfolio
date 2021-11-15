@@ -44,27 +44,28 @@ Users should be able to:
 - Netlify and GitHub pages for continous deployment
 
 ### What I learned
+	[React js  creating functionial components]:
 
-```React js
-  using function components:
-    export default function Navbar() {
-      ...
-      return(
-        <div className="navbar">
-          ...
-        </div>
-      )
-    }
-```
+	```
+	    export default function Navbar() {
+	      ...
+	      return(
+		<div className="navbar">
+		  ...
+		</div>
+	      )
+	    }
+	```
 
-```React js
-using state :
+[React js usestate]
+
+``` 
   import React, { useState } from 'react'
   ...
   const [displayMenu, setDisplayMenu] = useState(false)
 }
 
-then passing it to child using contextApi:
+ [passing it to child using contextAp]:
   export const PortfolioContext = React.createContext()
   ...
   <PortfolioContext.Provider

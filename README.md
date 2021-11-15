@@ -10,18 +10,7 @@
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
-
-### The challenge
-
-Users should be able to:
-
-- See the size of the elements adjust based on their device's screen size
-- Perform mathmatical operations like addition, subtraction, multiplication, and division
-- Adjust the color theme based on their preference
-- **Bonus**: Have their initial theme preference checked using `prefers-color-scheme` and have any additional changes saved in the browser
 
 ### Screenshot
 
@@ -41,12 +30,13 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- Netlify and GitHub pages for continous deployment
+- [Netlify] and [GitHub] pages for continous deployment
 
 ### What I learned
 
+- React [Functional_Components]:
+
 ```React js
-  using function components:
     export default function Navbar() {
       ...
       return(
@@ -57,23 +47,33 @@ Users should be able to:
     }
 ```
 
-```React js
-using state :
-  import React, { useState } from 'react'
-  ...
-  const [displayMenu, setDisplayMenu] = useState(false)
-}
+- Using [useState]:
 
-then passing it to child using contextApi:
-  export const PortfolioContext = React.createContext()
+```React js
+
+  import React, { [useState] } from 'react'
   ...
-  <PortfolioContext.Provider
+  const [displayMenu, setDisplayMenu] = [useState(false)]
+}
+```
+
+- Passing props to child using [contextApi]:
+
+```Reactjs
+
+  export const PortfolioContext = [React.createContext()]
+  ...
+  <[PortfolioContext.Provider]
 				value={{ isPortrait, handleShowMenu, displayMenu }}>
 				....
 			</PortfolioContext.Provider>
+```
 
-and accesing in a consumer componet(child):
-  import React, { useContext } from 'react'
+- Then, use [useContext] :
+
+```Reactjs
+
+  import React, { [useContext] } from 'react'
   ...
   const { isPortrait, handleShowMenu, displayMenu } =
 		useContext(PortfolioContext)
@@ -85,12 +85,18 @@ and accesing in a consumer componet(child):
 				<Footer handleShowMenu={handleShowMenu} />
 			)}
 		</div>
+```
 
+- [mediaQuery] by using [react-resonsive]
+
+```
+  import { useMediaQuery } from 'react-responsive'
+  const isPortrait = useMediaQuery({ query: '(max-width: 750px)' })
 ```
 
 ### Continued development
 
--Use React Router to add another page for a cv or cover letter
+-Use React [Router] to add another page for a cv or cover letter
 -Refactor the naming of the componets to make them more re-usable
 
 ### Useful resources
@@ -99,8 +105,9 @@ and accesing in a consumer componet(child):
 
 - [contextApi](https://medium.com/nerd-for-tech/using-context-api-in-react-with-functional-components-dbc653c7d485) - This is an amazing article which helped me finally understand how to pass props from parent component to child using [contextApi]. I'd recommend it to anyone still learning this concept.
 
+- [mediaQuery] by using [react-resonsive]
+  run: npm install react-responsive --save
+
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/stormFred)
+- Twitter - [@FredStorm](https://www.twitter.com/stormFred)

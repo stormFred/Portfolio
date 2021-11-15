@@ -1,0 +1,377 @@
+html {
+	font-size: 10px;
+	scroll-behavior: smooth;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: Roboto, 'Oxygen', sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* =========App.css=========== */
+
+.app {
+	display: grid;
+	max-width: 100%;
+	min-height: 2rem;
+	position: relative;
+}
+
+/* =========Header.css========= */
+
+.header {
+	display: grid;
+	grid-template-columns: auto auto;
+	column-gap: 1rem;
+	position: sticky;
+	height: 6rem;
+	width: 100%;
+	font-size: 2.5rem;
+	padding: 1rem 1.7rem;
+	top: 0;
+	z-index: 2;
+	border: 0.01rem solid goldenrod;
+	background-color: rgb(31, 37, 37);
+}
+
+.header-name h1 {
+	font-size: 3rem;
+	color: gold;
+	margin: auto 1.5rem;
+}
+
+/*  ========Navbar.css========= */
+
+.navbar {
+	display: grid;
+	width: 100%;
+	height: 100%;
+}
+
+.menu-icon {
+	font-size: 3.3rem;
+	color: gold;
+	z-index: 5;
+	margin-left: 80%;
+	border: 1px solid goldenrod;
+	width: 3.5rem;
+	height: 3.3rem;
+	cursor: pointer;
+}
+
+.menu-menu:hover {
+	cursor: pointer;
+}
+
+.navbar > .footer {
+	display: grid;
+	grid-template-columns: auto;
+	height: 30rem;
+	width: 30rem;
+	margin-left: -16rem;
+	margin-top: 2rem;
+	border-radius: 2rem;
+	z-index: 1;
+}
+
+/* =========About.css========= */
+
+.about {
+	position: relative;
+	height: 59rem;
+	max-width: 100%;
+	margin: 0;
+	display: grid;
+	text-align: center;
+	clip-path: margin-box;
+	background-color: rgb(102, 102, 214);
+}
+
+.image {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.5;
+	z-index: 0;
+}
+
+.heading-container {
+	width: 100%;
+	position: relative;
+	top: 30rem;
+}
+.heading {
+	font-size: 2.5rem;
+	margin-top: -2.5rem;
+	max-width: 100%;
+	text-align: center;
+	color: gold;
+}
+
+.heading-desc {
+	position: relative;
+	top: -7rem;
+	margin: auto;
+	font-size: 1.7em;
+	color: greenyellow;
+}
+
+/*  ========Projects.css========= */
+
+.my-projects {
+	width: 100%;
+	border-style: 2px double;
+	margin-top: -1.5rem;
+	background: rgb(64, 65, 63);
+	padding: 1rem;
+	text-align: center;
+	border: 0.01rem solid goldenrod;
+}
+
+.my-projects-heading {
+	font-size: 2.5rem;
+	color: gold;
+}
+
+.projects {
+	display: grid;
+	column-gap: 3rem;
+	row-gap: 3rem;
+	position: relative;
+	min-height: 25rem;
+	padding: 3rem 0;
+}
+
+/*  ========Project.css========= */
+
+.project {
+	position: relative;
+	display: grid;
+	grid-template-rows: 1fr auto auto;
+	height: 38rem;
+	margin: auto;
+	width: 100%;
+	font-size: 1.5rem;
+	color: gold;
+	border: 0.01rem solid goldenrod;
+	background-color: blueviolet;
+	opacity: 0.8;
+}
+
+.project-container {
+	height: 27rem;
+	width: 96%;
+	margin: 1rem auto;
+}
+
+.project-image {
+	height: 100%;
+	width: 100%;
+	display: block;
+	background-size: cover;
+}
+
+.project-name {
+	text-align: center;
+	font-size: 1.5rem;
+	text-decoration: underline;
+}
+
+.links {
+	display: grid;
+	grid-template-columns: auto auto;
+	column-gap: 4rem;
+	text-align: center;
+	margin-top: -1rem;
+	background-color: rgb(150, 158, 158);
+}
+
+.link {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.link a {
+	color: rgb(255, 238, 6);
+}
+
+/*  ========connect.css========= */
+
+.connect {
+	display: grid;
+	grid-template-columns: auto;
+	position: relative;
+	height: 20rem;
+	max-width: 100%;
+	font-size: 1.6rem;
+	border: 1px solid;
+	background-color: rgb(30, 34, 34);
+}
+
+.lets {
+	position: relative;
+	margin: auto;
+	font-size: 2rem;
+	padding: 0;
+}
+
+.lets h3 {
+	margin: auto;
+	text-align: center;
+	font-size: 2.5rem;
+	color: yellowgreen;
+}
+
+.all-contacts {
+	display: grid;
+}
+
+.contacts-container {
+	width: 25%;
+	display: grid;
+	grid-template-columns: auto auto;
+	row-gap: 2rem;
+	margin: 0 auto;
+}
+
+.icon {
+	color: yellowgreen;
+	font-size: 2.5rem;
+}
+
+.link {
+	color: gold;
+	margin-top: -0.5rem;
+	margin-left: 1rem;
+}
+
+/*  ========Footer.css========= */
+
+.footer {
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	font-size: 1.7rem;
+	position: relative;
+	height: 6rem;
+	width: 100%;
+	border: 0.01rem solid goldenrod;
+	background-color: rgb(0, 0, 0);
+}
+
+.footer-home,
+.footer-about,
+.footer-projects {
+	margin: 1.5rem auto;
+}
+
+#footer .anchor {
+	color: greenyellow;
+}
+
+/*  ========Media query========= */
+
+@media (min-width: 515px) {
+	.icon-container {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+}
+
+@media (min-width: 750px) {
+	.header {
+		height: 7rem;
+	}
+
+	.header-name h1 {
+		margin-top: -1rem;
+		font-size: 5rem;
+		margin-left: 5rem;
+	}
+
+	.navbar {
+		position: fixed;
+		width: 50%;
+		height: 5rem;
+		margin-left: 60%;
+		z-index: 3;
+		top: 0;
+	}
+
+	.navbar > .footer {
+		display: grid;
+		grid-template-columns: repeat(4, auto);
+		font-size: 2rem;
+		column-gap: 4rem;
+		background: none;
+		border: none;
+		height: inherit;
+		width: inherit;
+		margin-left: -5em;
+		top: -4px;
+	}
+
+	.header-menu {
+		display: none;
+	}
+
+	.heading {
+		font-size: 4rem;
+	}
+
+	.heading-desc {
+		font-size: 1.8rem;
+		top: -5rem;
+	}
+
+	.projects {
+		grid-template-columns: auto auto;
+		row-gap: 3rem;
+		padding: 3rem;
+	}
+
+	.connect {
+		grid-template-rows: auto;
+	}
+
+	.all-contacts {
+		grid-template-columns: auto auto auto;
+	}
+
+	.contacts-container {
+		column-gap: 0.1rem;
+		margin-top: -1rem;
+		grid-template-columns: auto auto;
+	}
+
+	.gmail-icon,
+	.linkedin-icon,
+	.phone-icon {
+		margin-top: -0.5rem;
+	}
+
+	.link-container a {
+		margin-top: 1rem;
+	}
+}
+
+@media (min-width: 1000px) {
+	.navbar {
+		margin-left: 67%;
+	}
+	.projects {
+		grid-template-columns: auto auto auto;
+		row-gap: 3rem;
+	}
+}

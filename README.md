@@ -34,7 +34,9 @@
 
 ### What I learned
 
-- React [Functional_Components]:
+    React Js
+
+- React Functional_Components:
 
 ```React js
     export default function Navbar() {
@@ -47,29 +49,29 @@
     }
 ```
 
-- Using [useState]:
+- Using useState:
 
 ```React js
 
-  import React, { [useState] } from 'react'
+  import React, { useState} from 'react'
   ...
-  const [displayMenu, setDisplayMenu] = [useState(false)]
+  const [displayMenu, setDisplayMenu] = useState(false)
 }
 ```
 
-- Passing props to child using [contextApi]:
+- Passing props to child using contextApi:
 
 ```Reactjs
 
-  export const PortfolioContext = [React.createContext()]
+  export const PortfolioContext = React.createContext()
   ...
-  <[PortfolioContext.Provider]
-				value={{ isPortrait, handleShowMenu, displayMenu }}>
-				....
-			</PortfolioContext.Provider>
+  <PortfolioContext.Provider
+    value={{ isPortrait, handleShowMenu, displayMenu }}>
+    ....
+  </PortfolioContext.Provider>
 ```
 
-- Then, use [useContext] :
+- Then, use useContext :
 
 ```Reactjs
 
@@ -79,15 +81,15 @@
 		useContext(PortfolioContext)
   ...
   </div>
-			{isPortrait ? (
-				displayMenu && <Footer handleShowMenu={handleShowMenu} />
-			) : (
-				<Footer handleShowMenu={handleShowMenu} />
-			)}
-		</div>
+    {isPortrait ? (
+      displayMenu && <Footer handleShowMenu={handleShowMenu} />
+    ) : (
+      <Footer handleShowMenu={handleShowMenu} />
+    )}
+  </div>
 ```
 
-- [mediaQuery] by using [react-resonsive]
+- mediaQuery by using "react-resonsive" library
 
 ```
   import { useMediaQuery } from 'react-responsive'
@@ -96,16 +98,16 @@
 
 ### Continued development
 
--Use React [Router] to add another page for a cv or cover letter
+-Use React Router to add another page for a cv or cover letter
 -Refactor the naming of the componets to make them more re-usable
 
 ### Useful resources
 
 - [React Basics](https://reactjs.org) - This helped me with understanding the basic react concepts. I really liked how they kept everyting simple and good explanations.
 
-- [contextApi](https://medium.com/nerd-for-tech/using-context-api-in-react-with-functional-components-dbc653c7d485) - This is an amazing article which helped me finally understand how to pass props from parent component to child using [contextApi]. I'd recommend it to anyone still learning this concept.
+- [contextApi](https://medium.com/nerd-for-tech/using-context-api-in-react-with-functional-components-dbc653c7d485) - This is an amazing article which helped me finally understand how to pass props from parent component to child using contextApi. I'd recommend it to anyone still learning this concept.
 
-- [mediaQuery] by using [react-resonsive]
+- mediaQuery by using react-resonsive
   run: npm install react-responsive --save
 
 ## Author

@@ -68,9 +68,9 @@ then passing it to child using contextApi:
   export const PortfolioContext = React.createContext()
   ...
   <PortfolioContext.Provider
-				value={{ isPortrait, handleShowMenu, displayMenu }}>
-				....
-			</PortfolioContext.Provider>
+	value={{ isPortrait, handleShowMenu, displayMenu }}>
+	....
+</PortfolioContext.Provider>
 
 and accesing in a consumer componet(child):
   import React, { useContext } from 'react'
@@ -79,12 +79,12 @@ and accesing in a consumer componet(child):
 		useContext(PortfolioContext)
   ...
   </div>
-			{isPortrait ? (
-				displayMenu && <Footer handleShowMenu={handleShowMenu} />
-			) : (
-				<Footer handleShowMenu={handleShowMenu} />
-			)}
-		</div>
+	{isPortrait ? (
+		displayMenu && <Footer handleShowMenu={handleShowMenu} />
+	) : (
+		<Footer handleShowMenu={handleShowMenu} />
+	)}
+</div>
 
 ```
 

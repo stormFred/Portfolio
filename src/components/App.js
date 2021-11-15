@@ -9,6 +9,7 @@ import Connect from './Connect'
 import Footer from './Footer'
 import '../styles.css'
 import blogr from '../Images/desktop-preview.jpg'
+import portfolio from '../Images/project-screenshot.png'
 
 export const PortfolioContext = React.createContext()
 
@@ -43,5 +44,12 @@ const MYPROJECTS = [
 		gitLink: 'https://github.com/stormFred/Blogr-Landing-Page',
 		liveLink: 'https://stormfred.github.io/Blogr-Landing-Page/',
 		imgSource: `${blogr}`,
+	},
+	{
+		id: 2,
+		name: 'Portfolio',
+		gitLink: 'https://github.com/stormFred/Portfolio',
+		liveLink: 'https://stormfred-portfolio.netlify.app',
+		imgSource: `${portfolio}`,
 	},
 ]

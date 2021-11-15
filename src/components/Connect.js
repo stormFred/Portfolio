@@ -16,8 +16,8 @@ export default function Connect() {
 							<SiGmail className="gmail-icon icon" />
 						</div>
 						<div className="link-container">
-							<a href="gmail" className="connect-link link">
-								Gmail
+							<a href="#Gmail" className="connect-link link">
+								Email: fredgkimani@gmail.com
 							</a>
 						</div>
 					</div>
@@ -26,7 +26,9 @@ export default function Connect() {
 							<AiFillLinkedin className="linkedin-icon icon" />
 						</div>
 						<div className="link-container">
-							<a href="linkedin" className="connect-link link">
+							<a
+								href="https://www.linkedin.com/in/fredrick-gichuhi-7a5987212/"
+								className="connect-link link">
 								LinkedIn
 							</a>
 						</div>
@@ -36,7 +38,7 @@ export default function Connect() {
 							<GiRotaryPhone className="phone-icon icon" />
 						</div>
 						<div className="link-container">
-							<a href="gmail" className="connect-link link">
+							<a href="phone" className="connect-link link">
 								+254726840609
 							</a>
 						</div>

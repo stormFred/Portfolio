@@ -32,8 +32,8 @@ export default function App() {
 				<Header />
 				<Home />
 				<About />
-				<Projects mainProjects={mainProjects} />
 				<ProjectsHeading />
+				<Projects mainProjects={mainProjects} />
 				<Connect />
 				<Footer />
 			</PortfolioContext.Provider>

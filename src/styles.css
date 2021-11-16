@@ -135,22 +135,32 @@ a {
 /*   ========About.css========= */
 
 .about {
+	position: relative;
+	min-width: 10rem;
+	margin: 0;
 	border: 1px solid goldenrod;
-	background: rgba(0, 1, 1, 0.5);
+	background: rgb(120, 57, 179);
+	padding-bottom: 2rem;
 }
 
 .about-par {
 	text-align: center;
 	font-size: 1.8rem;
+	color: white;
+}
+
+strong {
 	color: gold;
 }
 
-.list-container {
-	text-align: center;
-	align-items: center;
-}
 /*  ========Projects.css========= */
 
+/* projects Heading */
+.my-projects-heading {
+	font-size: 2.5rem;
+	color: gold;
+	padding-top: 1.5rem;
+}
 .my-projects {
 	width: 100%;
 	border-style: 2px double;
@@ -159,11 +169,6 @@ a {
 	padding: 1rem;
 	text-align: center;
 	border: 0.01rem solid goldenrod;
-}
-
-.my-projects-heading {
-	font-size: 2.5rem;
-	color: gold;
 }
 
 .projects {
@@ -317,7 +322,8 @@ a {
 
 	.header-name h1 {
 		margin-top: -1rem;
-		font-size: 5rem;
+		font-size: 4.8rem;
+		margin-top: -0.1rem;
 		margin-left: 5rem;
 	}
 

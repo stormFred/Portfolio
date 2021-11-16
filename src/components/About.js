@@ -1,17 +1,34 @@
-import React from 'react'
-import road from '../Images/road7.jpeg'
+import React, { useContext } from 'react'
+import { PortfolioContext } from './App'
 
 export default function About() {
+	const { fields } = useContext(PortfolioContext)
+
 	return (
 		<div className="about" id="about">
-			<img src={road} alt="Fred" className="image"></img>
-			<div className="heading-container">
-				<h1 className="heading">WELCOME. I'M FREDRICK</h1>
-			</div>
-			<p className="heading-desc">
-				I Am A Front-End Web Developer
-				<br /> Ready To Work, Learn, and Grow.
+			<p className="about-par">
+				My name is <strong>Fredrick Gichuhi</strong>. I am a self-taught
+				developer. I have proficiency in the following fields:
 			</p>
+			<p className="about-par"></p>
+			<ul className="list-continer">
+				{fields.map((field) => (
+					<li
+						className="list"
+						style={{
+							background: 'none',
+							fontSize: '14px',
+							textAlign: 'left',
+							listStyleType: 'none',
+							padding: '.7rem 50rem',
+							fontWeight: 'bold',
+							minWidth: '1rem',
+							color: 'greenyellow',
+						}}>
+						{field}
+					</li>
+				))}
+			</ul>
 		</div>
 	)
 }

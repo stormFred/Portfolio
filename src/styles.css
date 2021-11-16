@@ -83,9 +83,13 @@ a {
 	z-index: 1;
 }
 
-/* =========About.css========= */
+.navbar > .footer .foot {
+	margin-top: 1rem;
+}
 
-.about {
+/* =========Home.css========= */
+
+.home {
 	position: relative;
 	height: 59rem;
 	max-width: 100%;
@@ -128,6 +132,23 @@ a {
 	color: greenyellow;
 }
 
+/*   ========About.css========= */
+
+.about {
+	border: 1px solid goldenrod;
+	background: rgba(0, 1, 1, 0.5);
+}
+
+.about-par {
+	text-align: center;
+	font-size: 1.8rem;
+	color: gold;
+}
+
+.list-container {
+	text-align: center;
+	align-items: center;
+}
 /*  ========Projects.css========= */
 
 .my-projects {
@@ -264,7 +285,7 @@ a {
 	grid-template-columns: repeat(4, auto);
 	font-size: 1.7rem;
 	position: relative;
-	height: 6rem;
+	height: 10rem;
 	width: 100%;
 	border: 0.01rem solid goldenrod;
 	background-color: rgb(0, 0, 0);
@@ -273,7 +294,7 @@ a {
 .footer-home,
 .footer-about,
 .footer-projects {
-	margin: 1.5rem auto;
+	margin: 3.3rem auto;
 }
 
 #footer .anchor {

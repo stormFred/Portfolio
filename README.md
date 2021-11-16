@@ -25,9 +25,7 @@
 - [React](https://reactjs.org/) - JS library
 - [Netlify] and [GitHub] pages for continous deployment
 
-### What I learned
-
-    React Js
+### What I learned. React Js
 
 - React Functional_Components:
 

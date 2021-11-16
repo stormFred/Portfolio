@@ -17,7 +17,7 @@ export default function Connect() {
 						</div>
 						<div className="link-container">
 							<a href="#Gmail" className="connect-link link">
-								Email: fredgkimani@gmail.com
+								fredgkimani@gmail.com
 							</a>
 						</div>
 					</div>

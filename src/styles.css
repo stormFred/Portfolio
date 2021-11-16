@@ -371,7 +371,7 @@ a {
 		margin-left: 67%;
 	}
 	.projects {
-		grid-template-columns: auto auto auto;
+		grid-template-columns: repeat(3, 1fr);
 		row-gap: 3rem;
 	}
 }
